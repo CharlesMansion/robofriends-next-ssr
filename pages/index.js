@@ -4,7 +4,7 @@ import Layout from './comps/Layout';
 import CardList from './comps/CardList';
 import fetch from 'isomorphic-unfetch';
 import Searchbox from './comps/Searchbox';
-
+import Scroll from './comps/Scroll';
 
 class Index extends Component {
 	constructor(props) {
@@ -33,7 +33,9 @@ render() {
 		<Layout>
 			<Title/>
 			<Searchbox searchChange = {this.onSearchChange}/>
-			<CardList robots={filteredRobots}/>
+			<Scroll>
+				<CardList robots={filteredRobots}/>
+			</Scroll>
 		</Layout>
 
 		)
