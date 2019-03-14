@@ -5,11 +5,11 @@ const CardList = (props) => {
 	return (
 		<div>
 		{props.robots.map((robot) => (
-	  			  			<Link as={`/robots/${robot.id}`} href={`/post?id=${robot.id}`}>
-	  				<div>
-	  				<Card id={robot.id} name={robot.name} email={robot.email}/>
-	  				</div>
-	  			</Link>
+  			<Link as={`/robots/${robot.id}`} href={`/post?title=${robot.name}`}>
+				<div>
+					<Card id={robot.id} name={robot.name} email={robot.email}/>
+				</div>
+			</Link>
 	  	
 	  		))}
 		</div>
