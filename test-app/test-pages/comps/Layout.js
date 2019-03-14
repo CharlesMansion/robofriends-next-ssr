@@ -1,6 +1,5 @@
 const layoutStyle = {
-	fontFamily : 'Arial',
-	textAlign : 'center'
+	fontFamily : 'Arial'
 }
 
 const Layout = (props) => ( <div style={layoutStyle}> {props.children} </div>)
